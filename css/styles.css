@@ -575,7 +575,7 @@ footer {
 .close:hover .close-btn {
     fill: var(--white-background);
 }
-.close:hover .close-btn {
+.close:focus .close-btn {
     fill: var(--white-background);
 }
 .is-hidden {
