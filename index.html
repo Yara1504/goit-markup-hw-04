@@ -21,7 +21,7 @@
             <nav class="header-menu">
                 <a href="./index.html" class="logo link">Web<span>Studio</span></a>
                 <ul class="header-menu-bottom list">
-                    <li><a href="./index.html" class="header-menu-studio link">Studio</a></li>
+                    <li><a href="./index.html" class="header-menu-element link current">Studio</a></li>
                     <li><a href="./portfolio.html" class="header-menu-element link">Portfolio</a></li>
                     <li><a href="" class="header-menu-element link">Contacts</a></li>
                 </ul>
@@ -44,7 +44,7 @@
         <section id="home" class="basis">
             <div class="container title-container">
                 <h1 class="title">Effective Solutions for Your Business</h1>
-                <button type="button" class="main-btn data-modal-open">Order Service</button>
+                <button data-modal-open type="button" class="main-btn">Order Service</button>
             </div>
         </section>
 
@@ -320,7 +320,7 @@
                         </a>
                     </li>
                     <li class="client-item">
-                        <a class="sclient-link link" href="" aria-label="logot" target="_blank">
+                        <a class="client-link link" href="" aria-label="logot" target="_blank">
                             <svg class="client-link-icon" width="104" height="56">
                                 <use href="./images/icons.svg#icon-logot"></use>
                             </svg>
@@ -374,11 +374,21 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop">
-        <div class="data-modal">
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
             <button></button>
         </div>
     </div>
+
+    <div clas class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close class="close" type="button">
+                <svg class="close-btn" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+        </div>
+    </div>
+    <script src="./css/modal.js"></script>
 </body>
 
 </html>
